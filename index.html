@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./pass.css">
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+
+    <!--Password Requirements-->
+    <p>Password Requirements</p>
+
+    <form action="/action_page.php">
+    <input type="checkbox" name="upper" id="upperLetters">Upper Case<br>
+    <input type="checkbox" name="lower" id="lowerLetters">Lower Case<br>
+    <input type="checkbox" name="special" id="specialChars">Special Characters<br>
+    <input type="checkbox" name="numbers" id="numbers">Numbers<br>
+    <input type="number" name="Length" id="Length" min= "8" max= "128">Password Length<br>
+    <br><br>
+    </form>
+
+<!-- Generate Button  -->
+
+    <h2>Generate a Password</h2>
+
+    <textarea
+      readonly
+      id="password"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea> 
+
+    <input type="button" onclick="myfunction()" value="Generate">
+
+<!-- Copy Button  -->
+
+    <div class="tooltip" style="display:inline">
+        <button onclick="copyfunction()">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copy text
+        </button>
+    </div>
+    
+    <script src="./code.js"></script>
+  </body>
+</html>
