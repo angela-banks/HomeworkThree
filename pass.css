@@ -1,6 +1,7 @@
 .tooltip {
 position: relative;
 display: inline-block;
+margin: 0 5px;
 }
 
 .tooltip .tooltiptext {
@@ -42,4 +43,32 @@ body {
    font: 200px;
    color: white;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#box {
+    margin: 30px;
+    outline: 5px dashed black;
+    outline-offset: 15px;
+    position: absolute;
+    top: 50%;
+    bottom: 35%;
+    margin-left: 40%;
+}
+
+textarea {
+    margin: 0 7px;
+    background-color: darksalmon;
+    height: 30px;
+ 
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+p {
+    font-weight: bold;
+    font: 150px;
+    text-decoration: underline;
 }
