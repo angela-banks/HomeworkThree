@@ -36,31 +36,36 @@ function myfunction() {
 
     let password = "";
 
-    if (pickUpper.checked == true) { 
-        charSet += upper;
-        console.log(upper);
-    }
+    if (Length < 8 || > 128 == true) {
 
+        if (pickUpper.checked == true) { 
+            charSet += upper;
+            console.log(upper);
+        }
     
-    if (pickLower.checked == true ) {
-        charSet += lower;
-        console.log(lower);
+        
+        if (pickLower.checked == true ) {
+            charSet += lower;
+            console.log(lower);
+        }
+    
+        if (pickSpecial.checked == true ) {
+            charSet += special;
+            console.log(special)
+        }
+    
+        if (pickNumbers.checked == true) {
+            charSet += numbers
+            console.log(numbers)
+        }
+    
+        for (i = 0; i <Length.value; i++) {
+            password += charSet.charAt(Math.floor(Math.random() * charSet.length));
+            console.log(password);
+          }
+
     }
 
-    if (pickSpecial.checked == true ) {
-        charSet += special;
-        console.log(special)
-    }
-
-    if (pickNumbers.checked == true) {
-        charSet += numbers
-        console.log(numbers)
-    }
-
-    for (i = 0; i <Length.value; i++) {
-        password += charSet.charAt(Math.floor(Math.random() * charSet.length));
-        console.log(password);
-      }
 
     return document.getElementById("password").innerText = password;
 
