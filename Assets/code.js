@@ -35,9 +35,9 @@ console.log(Length)
 function myfunction() {
 
     let password = "";
-
-    if (Length < 8 || > 128 == true) {
-
+   
+    if (Length.value >=  8 && Length.value <= 128 ) {
+       
         if (pickUpper.checked == true) { 
             charSet += upper;
             console.log(upper);

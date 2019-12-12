@@ -49,11 +49,12 @@ body {
     margin: 30px;
     outline: 5px dashed black;
     outline-offset: 15px;
-    position: absolute;
+    position: relative;
     top: 50%;
     bottom: 35%;
-    margin-left: 40%;
+     
 }
+
 
 textarea {
     margin: 0 7px;
